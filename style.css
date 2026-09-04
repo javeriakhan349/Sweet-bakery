@@ -1,183 +1,954 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0 auto;
-    font-style: sans-serif;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #1F1F1F;
-
 }
 
-header {
-    width: 1080px;
-    margin: 80px auto;
+html {
+    scroll-behavior: smooth;
+}
+.social {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-ul {
-    list-style: none;
+.social a {
+    font-size: 20px;
+    color: #444;
+}
+
+.social a:hover {
+    color: #f48698;
+}
+
+.social-bottom {
     display: flex;
     justify-content: center;
-    width: 920px;
+    align-items: center;
+    gap: 18px;
 }
 
-nav button {
-    border-radius: 40px;
-    background-color: #5fcac7;
-    color: white;
-    border: 1px #5fcac7 solid;
-    margin: -5px 9px;
-    height: 40px;
-    font-weight: 500;
-    padding: 0px 15px;
+.social-bottom a {
+    color: #fff;
+    font-size: 20px;
 }
 
-ul img {
-    margin-left: -140px;
-    margin-top: -30px;
-
+.social-bottom a:hover {
+    color: #70d0cb;
 }
-
-.two button {
-    border-radius: 40px;
-    background-color: #5fcac7;
-    color: white;
-    border: 1px #5fcac7 solid;
-    margin: -5px 9px;
-    height: 60px;
-    font-weight: 500;
-    padding: 0px 40px;
-    position: absolute;
-    top: 400px;
-    left: 50px;
-    margin: 100px 50px;
-}
-
-.two img {
+.specialty-list {
+    width: 700px;
+    max-width: 90%;
     margin: auto;
-    vertical-align: middle;
-    border-style: none;
-    position: relative;
-    width: 100%;
-    opacity: 0.9;
-}
 
-.two {
-    width: 100%;
-    height: 840px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 35px;
+}
+.specialty img {
+    width: 120px;
+    height: 80px;
     object-fit: cover;
-    position: relative;
+    border-radius: 4px;
 }
 
-.two h1 {
-    padding: 100px 50px;
-
-    line-height: 86px;
-    font-weight: 700;
-    font-size: 4.5rem;
-    text-align: left;
-    color: #ffffff;
-    position: absolute;
-    top: 100px;
-    left: 50px;
+.specialty p {
+    font-size: 9px;
+    margin-top: 8px;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #4d4747;
+    background: #fff;
 }
 
-.two p {
-    padding: 140px 50px;
-    line-height: 86px;
-    font-size: 2.625rem;
-    font-weight: 500;
-    margin-top: 40px;
-    text-align: left;
-    color: #ffffff;
-    position: absolute;
-    top: 140px;
-    left: 50px
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.overlap {
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
     width: 100%;
-
+    height: 105px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background: #fff;
 }
 
-.three h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 3.625rem;
-    line-height: 70px;
-    top: -600px;
-    position: relative;
-    margin-left: -100px;
+.logo img {
+    width: 65px;
+    height: 65px;
 }
 
-.three {
-    /* position: relative; */
+.header nav {
+    display: flex;
+    gap: 30px;
+    margin-left: 25px;
+}
+
+.header nav a {
+    font-size: 12px;
+    color: #444;
+}
+
+.header nav a:hover {
+    color: #f48698;
+}
+
+.social {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    font-size: 9px;
+    color: #555;
+}
+
+.order-btn {
+    background: #70d0cb;
+    color: #fff;
+    padding: 11px 21px;
+    border-radius: 25px;
+    font-size: 11px;
+   
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    width: 100%;
+    min-height: 590px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, .38),
+            rgba(0, 0, 0, .38)
+        ),
+        url("https://mobirise.com/extensions/marketm4/sweet_bakery/assets/images/bakery2-1920x1280.jpg");
+
     background-size: cover;
     background-position: center;
-    margin-top: -40px;
-}
 
-.three table {
-    position: absolute;
-    top: 1700px;
-    margin-left: 300px;
-
-}
-
-td img {
-    width: 250px;
-}
-
-.three td {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-}
-
-.container {
     position: relative;
+
+    display: flex;
+    align-items: center;
 }
 
-.innerblock {
-  border: 1px whitesmoke solid;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 486px;
-    background-color: #5fcac6b6;
-    padding-right: 15px;
-    padding-left: 15px;
+.hero-content {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
 }
-.container img{
-    height:486px;
+
+.hero-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(32px, 3.2vw, 52px);
+    font-weight: 600;
+    margin-bottom: 18px;
 }
-.content{
-    padding: 150px;
-    margin: 50px;
-    border: 1px purple solid;
-    width: 500px;
-    height: 320px;
-    border-radius: 15px;
+
+.hero-content p {
+    font-size: clamp(16px, 1.3vw, 21px);
+    margin-bottom: 30px;
+}
+
+.pink-btn {
+    display: inline-block;
+    background: #f48698;
+    color: #fff;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.pink-btn:hover {
+    background: #ed7188;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.slider-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+/* ================= COMMON ================= */
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+/* ================= SPECIALTIES ================= */
+
+.specialties {
+    width: 100%;
+    min-height: 430px;
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 8% 55%,
+            rgba(245, 139, 155, .12) 0 100px,
+            transparent 101px
+        ),
+        radial-gradient(
+            circle at 92% 55%,
+            rgba(245, 139, 155, .12) 0 100px,
+            transparent 101px
+        ),
+        #fff;
+}
+
+.specialties h2 {
+    font-size: clamp(24px, 2vw, 30px);
+    margin-bottom: 50px;
+}
+
+.specialty-list {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 50px;
+}
+
+.specialty {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: #ffffff;
 }
-.content p{
-    text-align: center;
-    width: 466px;
-    height: 78px;
-    margin: 10px 0px 0px;
-    color: #ffffff;
+
+.specialty img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
 }
-.content h2{
-    text-align: center;
-     width: 466px;
-     font-size: 41px;
-     margin: 10px 0px 0px;
-     color: #ffffff;
+
+.specialty p {
+    font-size: 11px;
+    margin-top: 10px;
 }
-.fa-cake-candles{
+
+
+/* ================= PROCESSING ================= */
+
+.processing {
+    width: 100%;
+    min-height: 360px;
+
+    background:
+        linear-gradient(
+            rgba(78, 201, 197, .82),
+            rgba(78, 201, 197, .82)
+        ),
+        url("https://mobirise.com/extensions/marketm4/sweet_bakery/assets/images/bakery15-1200x800-800x533.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.processing-box {
+    width: 70%;
+    max-width: 700px;
+    min-height: 220px;
+
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 5px;
+
     text-align: center;
-   font-size: 50px;
+    color: #fff;
+
+    padding: 40px 60px;
+}
+
+.cake-icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.processing-box h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.processing-box p {
+    max-width: 500px;
+    margin: 0 auto 20px;
+
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.outline-btn {
+    display: inline-block;
+
+    border: 1px solid #fff;
+    padding: 9px 22px;
+
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+
+/* ================= CREATIONS ================= */
+
+.creations {
+    width: 100%;
+    padding: 65px 20px 75px;
     text-align: center;
-    color: #ffffff;
+}
+
+.section-icon {
+    color: #f48698;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.creations h2 {
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 120px;
+
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* ================= RECIPES ================= */
+
+.recipes {
+    width: 100%;
+    min-height: 470px;
+
+    padding: 65px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, .90),
+            rgba(255, 255, 255, .90)
+        ),
+        url("https://mobirise.com/extensions/marketm4/sweet_bakery/assets/images/bakery17-1200x800-800x533.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.recipes h2 {
+    font-size: 23px;
+    margin-bottom: 45px;
+}
+
+.recipe-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.recipe-text {
+    text-align: center;
+}
+
+.recipe-text h4 {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.recipe-text p {
+    font-size: 10px;
+    line-height: 1.9;
+}
+
+.recipe-image img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.recipe-image p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.footer-order
+{
+
+}
+/* ================= CLIENTS ================= */
+
+.clients {
+    width: 100%;
+
+    padding: 65px 20px;
+
+    background:
+        linear-gradient(
+            rgba(243, 120, 140, .88),
+            rgba(243, 120, 140, .88)
+        ),
+        url("https://mobirise.com/extensions/marketm4/sweet_bakery/assets/images/bakery21-240x240.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+}
+
+.clients h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 45px;
+}
+
+.client-grid {
+    width: 90%;
+    max-width: 850px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px 80px;
+}
+
+.client {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.client img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+.client p {
+    font-size: 10px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.client h4 {
+    font-size: 11px;
+}
+
+.client small {
+    font-size: 9px;
+}
+
+
+/* ================= CAKES ================= */
+
+.cakes {
+    width: 90%;
+    max-width: 850px;
+
+    margin: auto;
+    padding: 75px 0;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.cakes-table {
+    flex: 1;
+}
+
+.cakes-table h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+
+    font-size: 10px;
+    font-weight: 400;
+
+    color: #777;
+
+    padding-bottom: 10px;
+}
+
+td {
+    font-size: 10px;
+
+    padding: 9px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.question-box {
+    width: 190px;
+
+    padding: 22px 18px;
+
+    background: #f3f3f5;
+}
+
+.question-box h3 {
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.question-box p {
+    color: #70c8c3;
+
+    font-size: 9px;
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+.question-box span {
+    display: block;
+    font-size: 9px;
+    margin-bottom: 5px;
+}
+
+.question-box a {
+    color: #70c8c3;
+    font-size: 9px;
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter {
+    width: 100%;
+    min-height: 320px;
+
+    background:
+        linear-gradient(
+            rgba(45, 41, 41, .88),
+            rgba(45, 41, 41, .88)
+        ),
+        url("https://mobirise.com/extensions/marketm4/sweet_bakery/assets/images/bakery21-240x240.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-content {
+    width: 90%;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    margin-bottom: 28px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.subscribe input {
+    width: 280px;
+    height: 42px;
+
+    border: 1px solid #888;
+    background: transparent;
+
+    border-radius: 25px;
+
+    padding: 0 18px;
+
+    color: #fff;
+    font-size: 11px;
+}
+
+.subscribe button {
+    height: 42px;
+
+    border: none;
+
+    background: #70d0cb;
+    color: #fff;
+
+    border-radius: 25px;
+
+    padding: 0 25px;
+
+    font-size: 11px;
+}
+
+.newsletter-content > p {
+    font-size: 9px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.social-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+    font-size: 9px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    width: 100%;
+    min-height: 160px;
+
+    background: #292727;
+    color: #fff;
+
+    text-align: center;
+
+    position: relative;
+
+    padding: 30px 20px;
+}
+
+.footer-links {
+    position: absolute;
+
+    left: 8%;
+    top: 35px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a,
+.footer-order {
+    font-size: 9px;
+}
+
+footer img {
+    width: 45px;
+    height: 45px;
+
+    margin: auto;
+}
+
+.footer-order {
+    position: absolute;
+
+    right: 8%;
+    top: 35px;
+}
+
+footer p {
+    font-size: 8px;
+    margin-top: 15px;
+}
+
+footer > span {
+    font-size: 7px;
+}
+
+
+/* ================================================= */
+/* TABLET */
+/* ================================================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 0 4%;
+        gap: 25px;
+    }
+
+    .header nav {
+        gap: 18px;
+        margin-left: 5px;
+    }
+
+    .specialty-list {
+        width: 95%;
+        gap: 30px 20px;
+    }
+
+    .gallery {
+        width: 95%;
+    }
+
+    .client-grid {
+        width: 95%;
+        gap: 30px;
+    }
+
+    .cakes {
+        width: 92%;
+    }
+
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        height: auto;
+
+        padding: 15px 20px;
+
+        display: flex;
+        justify-content: center;
+
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .header nav {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 18px;
+
+        order: 3;
+    }
+
+    .header nav a {
+        font-size: 10px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .order-btn {
+        font-size: 9px;
+        padding: 9px 15px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .hero-content {
+        width: 88%;
+    }
+
+    .hero-content h1 {
+        font-size: 31px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* Specialties */
+
+    .specialties {
+        padding: 55px 15px;
+    }
+
+    .specialties h2 {
+        margin-bottom: 35px;
+    }
+
+    .specialty-list {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .specialty img {
+        width: 130px;
+        height: 90px;
+    }
+
+
+    /* Processing */
+
+    .processing {
+        min-height: 350px;
+        padding: 30px 15px;
+    }
+
+    .processing-box {
+        width: 95%;
+        padding: 30px 20px;
+    }
+
+
+    /* Gallery */
+
+    .creations {
+        padding: 55px 15px;
+    }
+
+    .gallery {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery img {
+        height: 110px;
+    }
+
+
+    /* Recipes */
+
+    .recipes {
+        padding: 55px 15px;
+    }
+
+    .recipe-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+
+    /* Clients */
+
+    .client-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    /* Cakes */
+
+    .cakes {
+        width: 92%;
+        flex-direction: column;
+    }
+
+    .cakes-table {
+        width: 100%;
+    }
+
+    .question-box {
+        width: 100%;
+    }
+
+
+    /* Newsletter */
+
+    .newsletter {
+        min-height: 300px;
+    }
+
+    .newsletter h2 {
+        font-size: 25px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe input {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .subscribe button {
+        padding: 0 25px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        min-height: 190px;
+    }
+
+    .footer-links {
+        position: static;
+
+        justify-content: center;
+
+        margin-bottom: 20px;
+    }
+
+    .footer-order {
+        display: none;
+    }
+
 }
